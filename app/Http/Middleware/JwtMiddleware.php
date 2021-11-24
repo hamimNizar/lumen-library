@@ -4,6 +4,8 @@ namespace App\Http\Middleware;
 
 use App\Models\User;
 use Closure;
+use Exception;
+use Firebase\JWT\ExpiredException;
 use Firebase\JWT\JWT;
 use Firebase\JWT\SignatureInvalidException;
 
